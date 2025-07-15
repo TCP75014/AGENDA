@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Planning des équipes cordistes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Planning des équipes cordistes</h1>
+  <table id="planning">
+    <thead>
+      <tr>
+        <th>Jour</th>
+        <th>Équipe 1</th>
+        <th>Équipe 2</th>
+        <th>Équipe 3</th>
+        <th>Équipe 4</th>
+        <th>Équipe 5</th>
+        <th>Équipe 6</th>
+        <th>Équipe 7</th>
+      </tr>
+    </thead>
+    <tbody id="planning-body">
+      <!-- Lignes générées dynamiquement -->
+    </tbody>
+  </table>
+
+  <!-- Formulaire modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Ajouter une mission</h2>
+      <input type="text" id="mission-input" placeholder="Nom du chantier">
+      <button id="save-btn">Enregistrer</button>
+      <button id="cancel-btn">Annuler</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
